@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aesthetic Whisper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f6f1;
+      color: #000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background-color: #fff;
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1600180758890-3c5b2b1e1e1e?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      color: #000;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 600;
+    }
+    .hero p {
+      margin: 10px 0 20px;
+      font-size: 18px;
+    }
+    .hero button {
+      padding: 12px 28px;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .collections {
+      padding: 40px;
+      background: #f9f6f1;
+    }
+    .collections h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .products {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product p {
+      margin: 5px 0;
+    }
+    .deal {
+      margin: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 20px;
+      font-weight: 500;
+      background: #f9f6f1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="font-weight: 600;">aesthetic whisper</div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Shipping</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">About</a>
+      <a href="#">🔍</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Elevate Your Style</h1>
+    <p>Affordable fashion inspired by @_esthetic whisper</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="collections">
+    <h2>Trending Collections</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://iili.io/3XNs3SR.webp" alt="Sunglasses" />
+        
+        UV Protection, Riding Glasses  For Men & Women, Black)
+        
+        <p>₹ 249</p>
+        <p>View Product</p>
+      </div>
+      <div class="product">
+        <img src="https://iili.io/3XNorTN.webp" alt="White Sneakers" />
+        <p>₹ 1,499</p>
+        <p>View Product</p>
+      </div>
+      <div class="product">
+        <img src="https://iili.io/3XNwBZN.jpg" alt="Ring in Box" />
+        shoes 
+        <p>₹ 499</p>
+        <p>View Product</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="deal">
+    ₹399 Only 🔥 Best Deals This Week
+    <div>
+      <span style="background:#eee;padding:4px 8px;border-radius:4px;">02</span> :
+      <span style="background:#eee;padding:4px 8px;border-radius:4px;">17</span> :
+      <span style="background:#eee;padding:4px 8px;border-radius:4px;">49</span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Aesthetic Whisper
+  </footer>
+
+</body>
+</html>
