@@ -127,9 +127,7 @@
     <div class="products">
       <div class="product">
         <img src="https://iili.io/3XNs3SR.webp" alt="Sunglasses" />
-        
-        UV Protection, Riding Glasses  For Men & Women, Black)
-        
+        UV Protection, Riding Glasses For Men & Women, Black
         <p>₹ 249</p>
         <p>View Product</p>
       </div>
@@ -139,8 +137,8 @@
         <p>View Product</p>
       </div>
       <div class="product">
-        <img src="https://iili.io/3XNwBZN.jpg" alt="Ring in Box" />
-        shoes 
+        <img src="https://iili.io/3XNwBZN.jpg" alt="shoes" />
+        shoes
         <p>₹ 499</p>
         <p>View Product</p>
       </div>
@@ -150,15 +148,42 @@
   <div class="deal">
     ₹399 Only 🔥 Best Deals This Week
     <div>
-      <span style="background:#eee;padding:4px 8px;border-radius:4px;">02</span> :
-      <span style="background:#eee;padding:4px 8px;border-radius:4px;">17</span> :
-      <span style="background:#eee;padding:4px 8px;border-radius:4px;">49</span>
+      <span id="hours" style="background:#eee;padding:4px 8px;border-radius:4px;">00</span> :
+      <span id="minutes" style="background:#eee;padding:4px 8px;border-radius:4px;">00</span> :
+      <span id="seconds" style="background:#eee;padding:4px 8px;border-radius:4px;">00</span>
     </div>
   </div>
 
   <footer class="footer">
     Aesthetic Whisper
   </footer>
+
+  <script>
+    // Set a timer (e.g. 3 hours from now)
+    const endTime = new Date().getTime() + 3 * 60 * 60 * 1000;
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+      }
+    }
+
+    const x = setInterval(updateCountdown, 1000);
+  </script>
 
 </body>
 </html>
